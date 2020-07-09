@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id ="container">
+	<div id="header">
+		<div id="logo">
+			<div style="float: left; "><img src="covid-19.jpg" style="width: 90px;height: 60px;"></div>
+			<div style="float:right;color: white;font-size: 30px;padding: 13px 0px 0px 13px;background-color:#333; ">COVID-19</div>
+		</div>
+	<div id ="top_info">
+		<table style="height: 40px;width: 100%">
+			<tr>
+				
+				<td style="padding-left: 20px">
+					<a href="https://www.instagram.com/deepaksaini8690/" ><img src="instagram.png"  style="width: 20px;height: 20px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					 <a href="https://www.facebook.com/profile.php?id=100041465359168"><img src="facebook1.png" style="width: 20px;height: 20px"></a>
+				</td>
+			</tr>
+			<tr>
+				<td id="date" style="color:black;font-size: 10px;height: 40%"></td>
+			</tr>
+		</table>
+	</div>
+		<div id="navbar">
+			<ul>
+				<li><a href="COVID-19.html">COVID-19</a></li>
+				<li><a href="stmptoms.html">STMPTOMS</a></li>
+				<li><a href="Prevention.html">PREVENTION</a></li>
+				<li><a href="https://www.worldometers.info/coronavirus/">COUNTRIES</a></li>
+				<li><a href="https://www.mygov.in/covid-19/?cbps=1">INDIAN GOVERMENT</a></li>
+			</ul>
+		</div>
+	
+	</div>
+	<div id="content_area">
+		<div id="banner"><img src="coronavirus_structure_large.jpg"  id="demo"></div>
+		<div id="button">
+		<ul >
+			<li><button onclick="func(0)">1</button></li>
+			<li><button onclick="func(1)">2</button></li>
+			<li><button onclick="func(2)">3</button></li>
+			<li><button onclick="func(3)">4</button></li>
+			<li><button onclick="func(4)">5</button></li>
+			<li><button onclick="func(5)">6</button></li>
+			<li><button onclick="func(6)">7</button></li>
+			<li><button onclick="func(7)">8</button></li>
+			<li><button onclick="func(8)">9</button></li>
+		</ul>
+	</div>
+		<div id="left_col" ><marquee id='marquee' behavior="scroll" scrollamount="4" direction="up" width="100%"  onmouseover="this.stop();" onmouseout="this.start();"><a href="https://www.mohfw.gov.in/pdf/AdditionalguidelinesonrationaluseofPersonalProtectiveEquipmentsettingapproachforHealthfunctionariesworkinginnonCOVIDareas.pdf"  style="text-decoration: none;font-size: 10px"><strong style="color: blue;font-size: 14px">1</strong> Additional guidelines on rational use of Personal Protective Equipment(setting approach for Health functionaries working in non-COVID areas)<img src="https://www.mohfw.gov.in/pdf/new.gif"></a><br><hr style="color: lightgray;"><br>
+			<a href="https://youtu.be/ykZJ-jcE-Do" style="text-decoration: none;font-size: 10px"><strong style="font-size: 14px;color: blue;">2</strong> Awarness Material for front line workers of COVID-19 - Hindi</a><br><hr style="color: lightgray;"><br><strong style="font-size: 14px;color: blue;">3</strong><a href="https://youtu.be/tGiTKjPGP-s" style="text-decoration: none;font-size: 10px">The effect of Lockdown on Nature<img src="https://www.mohfw.gov.in/pdf/new.gif"></a><br><hr style="color: lightgray;"></marquee></div>
+		
+		<div id="right_col"><a href="https://www.mohfw.gov.in/#"><img src="icon-state.png" style="width: 100px;height: 40px;"></a>
+			<img src="giphy.gif" style="width: 100%;height: 80%"></div>
+	</div>
+	<div id ="footer"> 
+	<div style="float:left;">Helpline Number ........ </div>
+	<div style="float:right;">
+		<div style="float:left;padding: 0px 15px 30px 0px"><img src="phone.jpg"  style="width: 20px;height:20 ;"> </div>
+		<div style="float:right;padding: 3px 15px 30px 0px">>>> 1075</div>
+	</div> 
+  </div>
+  <div style="background-color: blue;width: 100%;height: 37px"><marquee  behavior="scroll" scrollamount="4" direction="left" width="100%"  onmouseover="this.stop();" onmouseout="this.start();"> <mark style="font-size: 25px;color: red;padding-top: 0px;padding-bottom: 30px;" > 'को-रो-ना' का मतलब'--->>'कोई रोड पर ना निकले'  </mark> <mark style="font-size: 25px;color: red;padding-top: 0px;padding-bottom: 30px;" direction="right">Corona means-no wearer will be found</mark></marquee></div>
+</div>
+<script type="text/javascript">
+	
+	var index=0;
+	var	dee=document.getElementById('demo');
+
+		setInterval(fun,3000);
+		function func()
+		{
+			index=arguments[0];
+		}
+	function  fun(){
+		var x=["covid-1.webp", "covid-2.png", "covid-3.jpg", "covid-4.jpg", "covid-5.jpg","covid-6.jpg","covid-6.webp", "covid-7.webp", "covid-8.jpg"]
+		
+		dee.setAttribute("src",x[index]);
+        myMove(x[index]);
+     if (index==0) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-8.jpg')";}
+     if (index==1) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-1.webp')";
+     }
+     if (index==2) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-2.png')";
+     }
+     if (index==2) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-3.jpg')";
+     }
+     if (index==4) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-4.jpg')";
+     }
+     if (index==5) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-5.jpg')";
+     }
+     if (index==6) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-6.jpg')";
+     }
+     if (index==7) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-6.webp')";
+     }
+     if (index==8) {
+     	document.getElementById('banner').style.backgroundImage="url('covid-7.webp')";
+     }
+    
+       
+        index++;
+		if(index==9)
+			{index=0;}
+		}
+  
+function myMove() {
+   
+  var elem = document.getElementById("demo");   
+  var pos = 50,heig=50;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos==document.getElementById("banner").offsetWidth) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      heig=heig+2/7;
+      elem.style.width = pos + "px"; 
+      elem.style.height = heig + "px"; 
+    }
+  }
+}
+	setInterval(dat,1000);
+	function dat(){
+		var x=new Date();
+       document.getElementById("date").innerHTML=x.getDate()+"/"+x.getMonth()+"/"+x.getFullYear()+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "+x.getHours() + " : " + x.getMinutes() + " : " +x.getSeconds();
+	}
+
+
+</script>
+<script type="text/javascript">
+	var x=0;
+	var t=document.getElementById("left_col");
+	setInterval(bordercolor,500);
+	function bordercolor(){
+		if(x>3)
+			{  x=0;}
+       if(x==0){
+       	 t.style.borderTopColor="yellow";
+          t.style.borderRightColor="lime";
+          t.style.borderBottomColor ="red";
+          t.style.borderLeftColor="green";
+       }
+        if(x==1){
+          t.style.borderTopColor="green";
+          t.style.borderRightColor="yellow";
+          t.style.borderBottomColor ="lime";
+          t.style.borderLeftColor="red";
+       }
+        if(x==2){
+           t.style.borderTopColor="red";
+          t.style.borderRightColor="green";
+          t.style.borderBottomColor ="yellow";
+          t.style.borderLeftColor="lime";
+       }
+        if(x==3){
+          t.style.borderTopColor="lime";
+          t.style.borderRightColor="red";
+          t.style.borderBottomColor ="green";
+          t.style.borderLeftColor="yellow";
+       }
+       x++;
+	}
+</script>
+</body>
+</html>
